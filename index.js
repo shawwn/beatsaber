@@ -171,7 +171,7 @@ const _readSongFromFile = name => {
 }
 
 const _readBeatsaverDirectory = name => {
-  const song = require(path.join(name, 'info.json'));
+  const song = JSON.parse(fs.readFileSync(path.join(name, 'info.json'), 'utf8'));
   for (const level of song.difficultyLevels) {
     if (level.jsonPath) {
       level.song = _readSongFromFile(path.join(name, level.jsonPath));
