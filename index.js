@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+"use strict";
 
 const fs = require('fs');
 const path = require('path');
@@ -14,7 +15,6 @@ const _peekChar = s => {
     return s.string[s.pos];
   }
 }
-"use strict";
 
 const _readChar = s => {
   if (s.pos < s.len) {
