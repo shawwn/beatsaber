@@ -1,6 +1,6 @@
 {
   "name": "beatsaber",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "BeatSaber song parser and loader",
   "main": "index.js",
   "repository": "https://github.com/shawwn/beatsaber.git",
